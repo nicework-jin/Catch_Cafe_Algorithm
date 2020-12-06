@@ -4,6 +4,6 @@
 
 ## Rules
 * 차주 스터디 시작전까지 업로드 필수
-* fileName: 영문이름 작성
-> ex) songgyubin.kt  or songgyubin.java 등등
+* fileName: 영문이름_알고리즘 내용 작성
+> ex) songgyubin_dp.kt  or songgyubin_dp_dfs.java 등등
 * commit: 문제 이름 ( 레벨 표시 X)
