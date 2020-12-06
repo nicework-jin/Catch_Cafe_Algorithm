@@ -5,6 +5,6 @@
 ## Rules
 * 차주 스터디 시작전까지 업로드 필수
 * fileName: 영문이름_알고리즘 내용 작성
-> ex) songgyubin_dp.kt  or songgyubin_dp_dfs.java 등등
+> ex) songgyubin_dp, songgyubin_dp_dfs, songgyubin_stack, songgyubin_priorityqueue 등등
 * commit: 문제 이름 ( 레벨 표시 X)
 > ex) 문자열 압축
