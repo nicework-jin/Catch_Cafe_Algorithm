@@ -22,3 +22,4 @@ if __name__ == '__main__':
     number = "5321"
     k = 2
     print(solution(number, k))
+    
