@@ -15,8 +15,6 @@ def solution(number, k):
     if k > 0:    # 반례 5321
         stack = list(stack)
         stack = stack[:len(stack)-k]
-
-    ans = ''
     return ''.join(stack)
 
 
