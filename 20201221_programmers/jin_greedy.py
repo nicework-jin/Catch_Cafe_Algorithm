@@ -1,13 +1,11 @@
 import sys
-from collections import deque
 
 def solution(number, k):
-    number = deque(number)
-    stack = deque()
-
+    number = list(number)
+    stack = []
     for comp in number:
         while stack and stack[-1] < comp and k > 0:
-            deque.pop(stack)
+            stack.pop(-1)
             k -= 1
         else:
             stack.append(comp)
@@ -16,7 +14,6 @@ def solution(number, k):
         stack = list(stack)
         stack = stack[:len(stack)-k]
     return ''.join(stack)
-
 
 if __name__ == '__main__':
     number = "5321"
