@@ -4,7 +4,7 @@
 #include <algorithm>
 
 using namespace std;
-
+//
 vector<string> vecStr;
 
 bool cmp(string a, string b) {
