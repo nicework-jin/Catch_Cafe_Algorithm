@@ -38,12 +38,7 @@ bool isRight(string input) {
                 if( input[i] == ')' ) st.pop();
                 //짝이 안맞는 경우
                 else st.push(input[i]);
-            } else if ( top == ')') {
-                //짝이 맞는 경우
-                if( input[i] == '(') st.pop();
-                //짝이 안맞는 경우
-                else st.push(input[i]);            
-             }
+            } 
         }
     }
     
