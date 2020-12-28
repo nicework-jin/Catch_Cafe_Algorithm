@@ -27,7 +27,7 @@ int isBalance(string input) {
 //올바른 문자열 판단
 bool isRight(string input) {
     stack<char> st;
-
+    
     for(int i = 0; i < input.size(); i++) {
         if( st.empty() ) st.push(input[i]);
         else {
