@@ -1,56 +1,24 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": 138,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "import itertools\n",
-    "\n",
-    "def isPrimeNum(n):\n",
-    "    if n == 1 or n == 0:\n",
-    "        return False\n",
-    "    for i in range(2, n):\n",
-    "        if n % i == 0:\n",
-    "            return False\n",
-    "    return True\n",
-    "\n",
-    "def solution(numbers):\n",
-    "    nums = list()\n",
-    "    for i in range(1, len(numbers)+1):\n",
-    "        N = itertools.permutations(numbers, i)\n",
-    "        nums.extend(map(lambda x: int(''.join(x)), N))\n",
-    "    \n",
-    "    res = 0\n",
-    "    nums = set(nums)\n",
-    "    print(nums)\n",
-    "    for num in nums:\n",
-    "        if isPrimeNum(num):\n",
-    "            res += 1\n",
-    "    return res"
-   ]
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.6.9"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 2
-}
+import itertools
+
+
+def isPrimeNum(n):
+    if n == 0 or n == 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+
+def solution(numbers):
+    nums = list()
+    for i in range(1, len(numbers) + 1):
+        N = itertools.permutations(numbers, i)
+        nums.extend(map(lambda x: int(''.join(x)), N))
+
+    res = 0
+    nums = set(nums)
+    for num in nums:
+        if isPrimeNum(num):
+            res += 1
+    return res
