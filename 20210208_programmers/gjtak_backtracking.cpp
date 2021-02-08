@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-vector<char> op_const = {'+', '-'};
+vector<char> op_const = {'+', '-'};//상수
 void Backtracking(vector<int>& numbers, vector<char>& op, int target, int& cnt){
     if(op.size() == numbers.size()){
         int res = numbers[0];   //초기화
