@@ -68,7 +68,6 @@ def solution(arr):
             if k < 2:
                 continue
             startList = add_startList(x, y, k, startList)
-
     answer = [zero, one]
     return answer
 
